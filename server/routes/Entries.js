@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { Entries } = require('../models');
+
 router.get('/', async (req,res) => {
   const entries = await Entries.findAll()
   res.json(entries)
