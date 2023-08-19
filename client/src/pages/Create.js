@@ -1,9 +1,11 @@
 import React from 'react'
-import {Formik,Form,Field, ErrorMessage} from 'formik'
+import '../index.css';
 
 function Create() {
   return (
-    <div>Create</div>
+    <div>
+    <p className='to-blue-300'>Hello</p>
+  </div>
   )
 }
 
