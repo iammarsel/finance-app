@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "iammarsel",
-    "password": "",
+    "password": "Smfwd#20",
     "database": "finance-app-db",
     "host": "finance-app-db.cciw6kfnqgvh.us-east-2.rds.amazonaws.com",
     "dialect": "mysql"
