@@ -1,15 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   mode: "jit",
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        gray: {
+          900: '#202225',
+          800: '#2f3136',
+          700: '#36393f',
+          600: '#4f545c',
+          400: '#d4d7dc',
+          300: '#e3e5e8',
+          200: '#ebedef',
+          100: '#f2f3f5',
+        },
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
