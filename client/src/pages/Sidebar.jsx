@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { FaHome,FaTable,FaChartBar, FaUser } from 'react-icons/fa';
+import { FaHome,FaTable,FaChartBar, FaUser, FaPlus } from 'react-icons/fa';
 const Sidebar = () => {
 
   return (
@@ -30,6 +30,16 @@ const Sidebar = () => {
             Graphs
           </span>
         </div>
+
+        <div className='sidebar-icon group'>
+          <NavLink to="/create">
+            <FaPlus />
+            </NavLink>
+            <span className='sidebar-tooltip group-hover:scale-100'>
+            New Entry
+          </span>
+        </div>
+
 
         <div className='sidebar-icon group'>
           <NavLink to="/profile">

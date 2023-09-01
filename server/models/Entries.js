@@ -11,7 +11,21 @@ module.exports = (sequelize, DataTypes) => {
     amount: {
       type: DataTypes.STRING,
       allowNull: false,      
+    },
+    source: {
+      type: DataTypes.STRING,
+      allowNull: false,   
     }
   })
+
+  Entries.associate = (models) => {
+    Entries.belongsTo(models.Users, {
+      foreignKey: {
+        allowNull: false,
+      },
+    });
+  };
+  
+
   return Entries
 }

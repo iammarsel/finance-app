@@ -8,7 +8,7 @@ function Home() {
   const [EntryList, setEntryList] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3001/entries").then((response) => {
+    axios.get("http://localhost:3001/entries", {headers: {accessToken: localStorage.getItem("accessToken")}}).then((response) => {
       setEntryList(response.data)
     })
   }, [])
@@ -32,6 +32,9 @@ function Home() {
                       Amount
                     </th>
                     <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4">
+                      Source
+                    </th>
+                    <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4">
                       Type
                     </th>
                     <th scope="col" className="text-sm font-medium text-gray-900 px-6 py-4">
@@ -47,6 +50,9 @@ function Home() {
                       </td>
                       <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                         {value.amount}
+                      </td>
+                      <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                        {value.source}
                       </td>
                       <td className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
                         {value.tag}
