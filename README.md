@@ -13,17 +13,18 @@ Some benefits are:
 Client Side:
 
 React
-react-router-down for routing of pages
-formik to create forms
-yup for validate information “password between 5 and 10 characters, including ! $ #” 
-
+<ul>
+<li>react-router-down for routing of pages</li>
+<li>formik to create forms</li>
+<li>yup for validate information “password between 5 and 10 characters, including ! $ #” </li>
+</ul>
 Server Side:
-
+<ul>
 NodeJs 
-Express 
-nodemon 
-MySQL Insomnia (API request tester)
-Axios (make api requests)
-Cors (used to whitelist computer’s API)
-JWT (JSON web token) - used to store authentication
-
+<li>Express</li>
+<li>nodemon</li>
+<li>MySQL Insomnia (API request tester)</li>
+<li>Axios (make api requests)</li>
+<li>Cors (used to whitelist computer’s API)</li>
+<li>JWT (JSON web token) - used to store authentication</li>
+</ul>
