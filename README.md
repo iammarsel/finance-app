@@ -12,8 +12,9 @@ Some benefits are:
 
 Client Side:
 
-React
+
 <ul>
+<li>React</li>
 <li>react-router-down for routing of pages</li>
 <li>formik to create forms</li>
 <li>yup for validate information “password between 5 and 10 characters, including ! $ #” </li>
