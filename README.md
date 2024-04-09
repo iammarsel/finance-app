@@ -20,7 +20,7 @@ React
 </ul>
 Server Side:
 <ul>
-NodeJs 
+<li>NodeJs</li>
 <li>Express</li>
 <li>nodemon</li>
 <li>MySQL Insomnia (API request tester)</li>
